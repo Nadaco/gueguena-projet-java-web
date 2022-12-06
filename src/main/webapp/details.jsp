@@ -15,7 +15,7 @@
 
 <div>Nom : <jsp:getProperty name="etudiant" property="nom"/></div>
 <div>Prénom : <jsp:getProperty name="etudiant" property="prenom"/></div>
-<div>Nombre d'absence : <jsp:getProperty name="nbAbsences" property="class"/> </div>
+<div>Nombre d'absence : <%= nbAbsences%> </div>
 
 <br/>
 <a href="index.jsp">retour à la liste d'étudiants</a>
