@@ -8,9 +8,9 @@
 
 <html>
 <head>
-    <title>Projet - étape 1</title>
+    <title>Projet - étape 2</title>
 </head>
-<h1>Projet - étape 1</h1>
+<h1>Projet - étape 2</h1>
 <h2>Fiche détaillée d'un étudiant</h2>
 
 <div>Nom : <jsp:getProperty name="etudiant" property="nom"/></div>

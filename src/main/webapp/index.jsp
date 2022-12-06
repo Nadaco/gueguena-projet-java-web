@@ -5,10 +5,10 @@
 
 <html>
 <head>
-    <title>Projet - étape 1</title>
+    <title>Projet - étape 2</title>
 </head>
 <body>
-<h1>Projet - étape 1</h1>
+<h1>Projet - étape 2</h1>
 <h2>Liste des étudiants</h2>
 <%for (Etudiant etudiant : GestionFactory.getEtudiants()) {%>
 <div>
