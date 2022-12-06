@@ -12,7 +12,7 @@
 <h2>Liste des étudiants</h2>
 <%for (Etudiant etudiant : GestionFactory.getEtudiants()) {%>
 <div>
-    <a href="details.jsp?id=<%=etudiant.getId()%>"><%=etudiant.getPrenom()%>
+    <a href="servlettraitementdetails?id=<%=etudiant.getId()%>"><%=etudiant.getPrenom()%>
         <%=etudiant.getNom()%>
     </a>
 </div>

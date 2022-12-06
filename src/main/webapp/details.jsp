@@ -3,10 +3,8 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 
-<%
-    int id = Integer.parseInt(request.getParameter("id"));
-    Etudiant etudiant = GestionFactory.getEtudiantById(id);
-%>
+<jsp:useBean id="etudiant" class="iut2.gueguenaprojetjavaweb.Etudiant" scope="request" />
+<jsp:useBean id="nbAbsences" type="java.lang.Integer" scope="request" />
 
 <html>
 <head>
@@ -15,12 +13,10 @@
 <h1>Projet - étape 1</h1>
 <h2>Fiche détaillée d'un étudiant</h2>
 
-<div>Nom : <%=etudiant.getNom()%>
-</div>
-<div>Prénom : <%=etudiant.getPrenom()%>
-</div>
-<div>Nombre d'absence : <%=GestionFactory.getAbsencesByEtudiantId(id)%>
-</div>
+<div>Nom : <jsp:getProperty name="etudiant" property="nom"/></div>
+<div>Prénom : <jsp:getProperty name="etudiant" property="prenom"/></div>
+<div>Nombre d'absence : <jsp:getProperty name="nbAbsences" property="class"/> </div>
+
 <br/>
 <a href="index.jsp">retour à la liste d'étudiants</a>
 <body>
