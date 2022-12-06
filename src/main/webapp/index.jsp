@@ -1,0 +1,22 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<%@ page import="iut2.gueguenaprojetjavaweb.GestionFactory" %>
+<%@ page import="iut2.gueguenaprojetjavaweb.Etudiant" %>
+
+<html>
+<head>
+    <title>Projet - étape 1</title>
+</head>
+<body>
+<h1>Projet - étape 1</h1>
+<h2>Liste des étudiants</h2>
+<%for (Etudiant etudiant : GestionFactory.getEtudiants()) {%>
+<div>
+    <a href="details.jsp?id=<%=etudiant.getId()%>"><%=etudiant.getPrenom()%>
+        <%=etudiant.getNom()%>
+    </a>
+</div>
+<%}%>
+<br/>
+</body>
+</html>
